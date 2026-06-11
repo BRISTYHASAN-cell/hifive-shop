@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% load crispy_forms_tags %}{% block content %}<h2>নতুন পণ্য যোগ করুন</h2><form method="post" enctype="multipart/form-data">{% csrf_token %}{{ form|crispy }}<button type="submit" class="btn btn-success">যোগ করুন</button></form>{% endblock %}
